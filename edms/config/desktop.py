@@ -9,6 +9,6 @@ def get_data():
 			"color": "red",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
-			"label": _("Enterprise Document Management System")
+			"label": _("EDMS")
 		}
 	]
