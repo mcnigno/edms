@@ -1,0 +1,24 @@
+{
+ "content": null, 
+ "creation": "2018-08-14 08:14:28.950888", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "icon": "icon-sitemap", 
+ "idx": 0, 
+ "modified": "2018-08-14 08:14:28.950888", 
+ "modified_by": "Administrator", 
+ "module": "Enterprise Document Management System", 
+ "name": "discipline-manager", 
+ "owner": "Administrator", 
+ "page_name": "Discipline Manager", 
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Discipline Manager"
+}

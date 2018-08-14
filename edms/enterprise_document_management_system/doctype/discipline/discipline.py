@@ -4,7 +4,8 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
+from frappe.utils.nestedset import NestedSet
 
-class Units(WebsiteGenerator):
-	pass
+class Discipline(NestedSet):
+	nsm_parent_field = 'parent_tree'

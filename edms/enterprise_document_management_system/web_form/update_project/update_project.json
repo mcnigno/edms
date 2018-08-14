@@ -1,0 +1,403 @@
+{
+ "accept_payment": 0, 
+ "allow_comments": 0, 
+ "allow_delete": 0, 
+ "allow_edit": 0, 
+ "allow_incomplete": 0, 
+ "allow_multiple": 0, 
+ "allow_print": 0, 
+ "amount": 0.0, 
+ "amount_based_on_field": 0, 
+ "creation": "2018-08-13 20:26:42.744987", 
+ "doc_type": "Project", 
+ "docstatus": 0, 
+ "doctype": "Web Form", 
+ "idx": 0, 
+ "introduction_text": "", 
+ "is_standard": 1, 
+ "login_required": 0, 
+ "max_attachment_size": 0, 
+ "modified": "2018-08-13 20:42:07.315003", 
+ "modified_by": "Administrator", 
+ "module": "Enterprise Document Management System", 
+ "name": "update-project", 
+ "owner": "Administrator", 
+ "payment_button_label": "Buy Now", 
+ "published": 1, 
+ "route": "update-project", 
+ "show_in_grid": 1, 
+ "show_sidebar": 1, 
+ "sidebar_items": [
+  {
+   "enabled": 0, 
+   "reference_doctype": "Units", 
+   "role": "System Manager", 
+   "route": "units", 
+   "title": "Unit List"
+  }
+ ], 
+ "success_url": "/example", 
+ "title": "Update Project", 
+ "web_form_fields": [
+  {
+   "fieldname": "name1", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "location", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Location", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "unit", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Unit", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Units", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "name1", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "start_date", 
+   "fieldtype": "Date", 
+   "hidden": 0, 
+   "label": "Start Date", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "end_date", 
+   "fieldtype": "Date", 
+   "hidden": 0, 
+   "label": "End Date", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "title", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Title", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "route", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Route", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "show_title", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Show Title", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "description", 
+   "fieldtype": "Small Text", 
+   "hidden": 0, 
+   "label": "Description", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "enable_comments", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Enable Comments", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "header", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "header", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "column_break_11", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "latitude", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Latitude", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "longitude", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Longitude", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "main_section", 
+   "fieldtype": "Text Editor", 
+   "hidden": 0, 
+   "label": "Main Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "css", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Css", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "text_align", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Text Align", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "sidebar_and_comments", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Sidebar and Comments", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "show_sidebar", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Show Sidebar", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "website__sidebar", 
+   "fieldtype": "Link", 
+   "hidden": 0, 
+   "label": "Website  Sidebar", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Website Sidebar", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "javascript", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Javascript", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "document_list_section", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Document List Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "document_list_ledger", 
+   "fieldtype": "Link", 
+   "hidden": 0, 
+   "label": "Document List Ledger", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Document List", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "status", 
+   "fieldtype": "Select", 
+   "hidden": 0, 
+   "label": "Status", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Draft\nUnderway\nCompleted", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "type", 
+   "fieldtype": "Select", 
+   "hidden": 0, 
+   "label": "Type", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Internal\nExternal", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "unit_plant_section", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Unit Plant Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "unit", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Unit", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Units", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "discipline_section", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Discipline Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "discipline", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Discipline", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Discipline", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "material_class_section", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Material Class Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "material_class", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Material Class", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Material Class", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "document_class_section", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "label": "Document Class Section", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "document_class", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Document Class", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Document Class", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "show_search", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "Show Search", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }
+ ]
+}

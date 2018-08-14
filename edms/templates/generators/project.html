@@ -1,0 +1,130 @@
+{% extends "website/doctype/web_page/templates/web_page.html" %}
+
+{%- block header -%} {{ header or "" }} {%- endblock -%}
+
+{% block hero %}{{ hero or "" }}{% endblock %}
+
+{% block breadcrumbs %}
+    {% if not no_breadcrumbs %}
+    {% include "templates/includes/breadcrumbs.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block page_content %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" 
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" 
+    crossorigin="" ></script>
+
+<div id="mapid"></div>
+
+<div class="webpage-content">
+    {% include "templates/includes/slideshow.html" %}
+    <div class="jumbotron">
+            <h1 class="display-4">{{ doc.title }} </h1>
+          
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          
+            <hr class="my-4">
+          
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          
+          </div>
+          
+          {% set u = frappe.get_doc("User", doc.user, "user@domain.com") %}
+          {{ u.first_name }} {{ u.last_name }}
+    <div id="location">{{ doc.location }}</div>
+          {{ doc.description }}
+	<article class="web-page-content jumbotron" id="{{ name }}" {% if text_align -%}style="text-align: {{ text_align }}"{%- endif %}>
+	{{ main_section or "" }}
+    </article>
+    
+    {% set un = frappe.get_list("units",{
+
+                "parent": doc.name        
+            })
+    %}
+    {% set ul = frappe.get_doc("Units","005")
+    %}
+    <p>{{ ul.name }}</p>
+    
+   {% set uc = frappe.get_doc("Units",{
+       "parent": "socar"
+   })
+    %}
+   
+    
+    
+    <p>name: {{uc.name}}</p>
+    <p>unit: {{uc.unit}}</p>
+    <p>owner: {{uc.owner}}</p>
+    <p>parent: {{uc.parent}}</p>
+    <p>start: {{uc.start_range}}</p>
+    <p>stop: {{uc.stop_range}}</p>
+ 
+
+    <p>doc.title:{{ doc.title }} </p>
+    <p>doc.status:{{ doc.status }} </p>
+    <p>doc.status:{{ doc.unit }} </p>
+     
+  
+    {% if enable_comments -%}
+    <hr>
+    <h3>Unit List</h3> 
+    
+    {% include "enterprise_document_management_system/doctype/units/templates/units_row.html" %}
+    <table class="table-dark">
+            <thead class="thead-dark">
+                <tr>
+                                <th width="2%">{{ _("Sr.") }}</th>
+                    <th width="46%">{{ _("Unit") }}</th>
+                                   <th width="13%" class="text-right">{{ _("Start") }}</th>
+                                   <th width="9%" class="text-right">{{ _("Stop") }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <p>before</p>
+                {%- for unit in un -%}
+                <p>rows</p>
+                <p>{{ unit }}</p>
+                <tr>
+        
+            <td>{{loop.index}}</td>
+                    <td>
+                    {{ unit.name }}
+                    {% set uni = frappe.get_doc("Units",unit.name) %} 
+                    </td>
+                                <td class="text-right">{{ uni.start_range }}</td>
+                    <td class="text-right">{{ uni.stop_range }}</td>
+                                  
+                </tr>
+                
+                {%- endfor -%}
+                
+        <tr><td colspan=6></td</td>
+            </tbody>
+        </table>
+    <h3>Discuss</h3>
+	{% include 'templates/includes/comments/comments.html' %}
+	{%- endif %}
+</div>
+
+{% endblock %}
+
+{% block style %}
+<style>
+{{ style or "" }}
+</style>
+{% endblock %}
+
+{% block script %}
+    <script>{{ script or "" }}</script>
+{% endblock %}
